@@ -1,0 +1,85 @@
+﻿.div_border
+{
+    border-color:Blue;
+}
+
+.div_main{	
+	font-family:Tahoma;
+    border-color:Blue;
+	font-size:14px;
+    border-style:none;
+    border-width:2px;
+	margin-left:50px;
+	width:400px;
+}
+
+.div_AddScene
+{
+    height:150px;
+    width:900px;
+}
+
+.div_Search
+{
+    height:350px;
+    width:350px;
+	position:absolute;
+	clear:left;
+}
+
+.div_searchResults
+{
+	font-family:Tahoma;
+	font-size:14px;
+	width:900px;
+
+}
+.div_Location
+{
+    height:400px;
+    width:350px;
+}
+
+.drodown_rounded
+{
+	border-radius:4px;
+	border:1px solid #aaaaaa;
+}
+
+.sceneDescriptionLabel
+{
+	width:300px;
+	display:inline-block;
+}
+
+select
+{
+    border:1px solid #0077CC;
+    border-radius:5px;
+    padding:3px;
+    text-indent: 0.01px;/*In Firefox*/
+}
+
+.table_cell_confirmAddEdit
+{
+	margin-bottom:40px;
+}
+
+input[type="text"]
+{
+    /*width:250px;*/
+	border:1px solid #0077CC; 
+	border-radius:4px;
+	background-color:white;
+}
+
+input[type="submit"]
+{
+	border:1px solid #0077CC; 
+	border-radius:3px;
+	font-size:12px;
+	font-style:italic;
+}
+
+
+#wrapper{position: absolute;}
