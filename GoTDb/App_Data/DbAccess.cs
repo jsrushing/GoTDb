@@ -15,6 +15,12 @@ namespace GoTDb.App_Data
 			return ConfigurationManager.ConnectionStrings[resourceId].ToString();
 		}
 
+		private static string ConnString()
+		{
+			return ConfigurationManager.ConnectionStrings["Main"].ToString();
+		}
+
+
 		public static int AddCharacter(Character character)
 		{
 			int iRtrn = -1;
@@ -82,6 +88,7 @@ namespace GoTDb.App_Data
 					{
 						cmd.Connection.Open();
 						cmd.CommandType = CommandType.StoredProcedure;
+						cmd.Parameters.AddWithValue("@createdBy", System.Security.Principal.WindowsIdentity.GetCurrent().Name);
 
 						if(sceneIdToEdit != "0")
 						{
